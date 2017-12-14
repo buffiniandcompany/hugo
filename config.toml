@@ -1,4 +1,3 @@
 baseURL = "https://buffiniandcompany.netlify.com"
 languageCode = "en-us"
 title = "Buffini & Company"
-theme = "ananke"
