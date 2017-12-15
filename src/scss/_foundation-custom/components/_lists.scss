@@ -1,0 +1,64 @@
+.list-checkmarks {
+  margin:0;
+  list-style-type:none;
+  li {
+    position:relative;
+    padding-left:4rem;
+  }
+  li:before {
+    content:'';
+    top:auto;
+    left:0;
+    position:absolute;
+    width:2.5rem;
+    height:2.5rem;
+    background-image: url('../../images/global/icons/icon-checkmark-black-circled.svg');
+    background-repeat:no-repeat;
+    background-size:2.5rem;
+  }
+}
+
+.list-checkmarks-light {
+  margin:0;
+  list-style-type:none;
+  li {
+    position:relative;
+    padding-left:4rem;
+    color:rgba(255, 255, 255, 0.7);
+  }
+  li:before {
+    content:'';
+    top:auto;
+    left:0;
+    position:absolute;
+    width:2.5rem;
+    height:2.5rem;
+    background-image: url('../../images/global/icons/icon-checkmark-white-circled.svg');
+    background-repeat:no-repeat;
+    background-size:2.5rem;
+  }
+}
+
+.list-checkmarks.checkmarks-centered {
+	li:before {
+		top: 50%;
+		bottom: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.list-borders {
+  list-style-type:none;
+  margin:0; 
+  li {
+    padding-top:1.25rem;
+    padding-bottom:1.25rem;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    p {
+      margin:0;
+    }
+  }
+  li:first-of-type {
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+  }
+}

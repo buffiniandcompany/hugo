@@ -1,0 +1,14 @@
+.reveal {
+  .close-button {
+    font-size:3em;
+  }
+}
+
+// Add padding to first element inside of reveal modal so the close button does not overlap
+.reveal >*:first-child {
+	padding-right:2rem !important;
+}
+
+.reveal-overlay {
+  z-index:2000;
+}

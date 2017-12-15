@@ -1,0 +1,22 @@
+﻿@import '../settings';
+
+table.stack {
+	@include breakpoint(medium down) {
+		tr {
+			padding: 1rem;
+		}
+		td {
+			padding: .5rem 1rem;
+		}
+	}
+}
+
+.table-light {
+	th {
+		background:rgba(0, 0, 0, 0.2);
+	}
+	tbody, tr, td {
+		background:rgba(0, 0, 0, 0.1);
+		border:1px solid rgba(255, 255, 255, 0.1);
+	}
+}
