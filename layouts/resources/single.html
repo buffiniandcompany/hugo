@@ -1,7 +1,10 @@
 {{ define "main" }}
-<p>Resource Post</p>
-  <article>
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Content }}</p>
+  <header class="header bg-gradient-teal">
+    <h3><a href="/resources" class="text-light">Resources</a></h3>
+  </header>
+  <article class="article">
+    <h2>{{ .Title }}</h2>
+    <img src="/images/{{ .Params.image }}" />
+    <p>{{ .Content }}</p>
   </article>
 {{ end }}

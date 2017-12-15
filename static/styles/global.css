@@ -5574,6 +5574,11 @@ a.thumbnail {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
+.article {
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 80px auto; }
+
 /*.agenda {
   background:rgba(255, 255, 255, 0.9);
   tr {
@@ -5907,8 +5912,8 @@ footer {
 \*-----------------------------------------------------------*/
 .header {
   position: relative;
-  padding-top: 180px;
-  padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
   color: #fff;
   background-size: cover;

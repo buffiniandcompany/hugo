@@ -1,12 +1,27 @@
 
 {{ define "main" }}
-<h1>Resources</h1>
-{{ range .Data.Pages }}
-  <article>
-    <a href="{{.URL}}">
-      <p>{{ .Title }}</p>
-    </a>
-    {{ .Content }}
-  </article>
-{{ end }}
+<!-- Header -->
+<header class="header bg-gradient-teal">
+  <h3><a href="/resources" class="text-light">Resources</a></h3>
+</header>
+<!-- Cards -->
+<section class="pt80 pb80">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-3 large-up-3">
+      {{ range .Data.Pages }}
+        <div class="cell">
+          <a href="{{.URL}}">
+            <div class="card">
+              <img src="/images/{{ .Params.image }}" />
+              <div class="card-section">
+                <h4>{{ .Title }}</h4>
+                <p>{{ slicestr .Summary 3 120 }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
