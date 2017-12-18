@@ -1,7 +1,7 @@
 {
   "name": "buffini-and-company",
   "version": "1.0.0",
-  "description": "Buffini & Company WordPress Theme",
+  "description": "Buffini & Company",
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1"
